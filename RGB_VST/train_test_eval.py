@@ -10,7 +10,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # train
     parser.add_argument('--Training', default=True, type=bool, help='Training or not')
-    #parser.add_argument('--init_method', default='tcp://127.0.0.1:9527', type=str, help='init_method')
+    parser.add_argument('--init_method', default='tcp://127.0.0.1:9527', type=str, help='init_method')
     parser.add_argument('--data_root', default='./Data/', type=str, help='data path')
     parser.add_argument('--train_steps', default=60000, type=int, help='total training steps')
     parser.add_argument('--img_size', default=224, type=int, help='network input size')
